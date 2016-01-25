@@ -1,0 +1,59 @@
+1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It reduced the number of lines of code that required visual inspection by displaying only enough to establish context, and tagging the specific lines that changed.
+
+By reducing the scope of the search, and calling attention to specific lines, only a few visual comparisons of lines are needed to spot the error, rather than hypothesizing where the error might me and wading through many more lines of code.
+
+---
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Here are a few ways:
+
+A) Faster debugging. Having the history easily accessible makes it possible to quickly perform diffs between successive versions of code to pinpoint likely locations of newly introduced bugs.
+
+B) Improved consistency and less manual bookkeeping. An easy and systematic means of accessing history eliminates visual clutter and the hassle of manually tracking and administering a multitude of separate file versions.
+
+C) Facilitates rollback. If a critical bug is discovered that compromises product stability, and cannot be readily fixed, a rollback can more easily be performed to a previous and stable version.
+
+D) Simplified forking and repurposing. If a fork in the code base is desired, where it is desirable to omit new but unnecessary features, that can easily be performed from any point in the history. The inefficient alternative might be to copy, review and remove unneeded code, and retest. I sometimes encounter this scenario, where I need to strip out code to make a basic template for similar projects.
+
+---
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+PROS
+- Fine control over granularity and timing of commits as judged most appropriate
+- Guarantee that changes comprise a complete and logical change
+- Avoid cluttering up history with  incomplete or untested changes that could compromise code base
+
+CONS
+-Forget to commit soon enough
+ (Larger commits make it more difficult to pinpoint problems via diff, and can mean more time consuming merges for other team members.)
+-Work could be lost if editor or computer crashes without maintaining backup
+
+---
+
+4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Some version control systems are geared toward software or projects, where at any point in the history of development, it is desirable to have a stable and cohesive snapshot of multiple dependent or interrelated files. Other control systems may be more focused on simplicity, or where the entirety of the task is easily captured in a single file.
+
+---
+
+5. How can you use the commands git log and git diff to view the history of files?
+
+Git log lists commits in reverse chronological order with useful information such as comment, author, and date-time stamp. So for instance, it can be used to see what the most recent changes were related to, who worked on them, and how long ago. It also identifies commits with a unique id, so they can be specified as arguments for the diff command. Git diff indicates the changes between two commits, displaying nearby context, and clearly marking lines which were added or removed.
+
+---
+
+6. How might using version control make you more confident to make changes that could break something?
+
+With the ability to perform a “checkout” to revert to a previous version, one can easily make experimental commits that may break something, but still return to a previously stable and cohesive state without worry. Version control facilitates exploration by leaving breadcrumbs to return home to a safe place.
+
+---
+
+7. Now that you have your workspace set up, what do you want to try using Git for?
+
+Experimenting with exploratory changes to a simple game code base.
+
+EOF
