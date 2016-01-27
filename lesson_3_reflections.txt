@@ -1,0 +1,2 @@
+1. When would you want to use a remote repository rather than keeping all your work local?
+A remote repository is desirable when you want to share with the public, allow access to collaborators, access your content from other devices, or to backup to the cloud.
