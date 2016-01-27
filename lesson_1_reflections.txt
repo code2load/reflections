@@ -25,7 +25,7 @@ D) Simplified forking and repurposing. If a fork in the code base is desired, wh
 PROS
 - Fine control over granularity and timing of commits as judged most appropriate
 - Guarantee that changes comprise a complete and logical change
-- Avoid cluttering up history with  incomplete or untested changes that could compromise code base
+- Avoid cluttering up history with incomplete or untested changes that could compromise code base
 
 CONS
 -Forget to commit soon enough
