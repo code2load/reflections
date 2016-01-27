@@ -15,3 +15,8 @@ A manual pull is preferred so that changes pushed to GitHub by a collaborator do
 Both forks and clones make a copy of an entire repository, whereas a branch operation allows variation on an existing branch within a repository. A fork is most appropriate
 to use when: you don’t have permission to modify a repository, you want to make a
 copy of the entire repository, you want to give credit to the author you copied from, and you want to contribute to GitHub’s fork statistics. A clone won’t offer credit to the original author without explicit steps, and does not contribute to fork statistics. If the ultimate goal is to make the repository copy available on GitHub, a fork can do so in fewer steps, rather than cloning, creating a new repository, and then pushing to synchronize. A branch is appropriate when you want to make a variation from a particular commit within an existing repository, say to add an experimental feature. 
+
+4. What is the benefit of having a copy of the last known state of the remote stored locally?
+
+This allows git to compare current state of remote to determine if there are commits on the remote not yet reflected on the local, in which case, a merge is required.
+
