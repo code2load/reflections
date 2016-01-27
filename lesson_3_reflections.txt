@@ -1,2 +1,7 @@
 1. When would you want to use a remote repository rather than keeping all your work local?
+
 A remote repository is desirable when you want to share with the public, allow access to collaborators, access your content from other devices, or to backup to the cloud.
+
+2. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+A manual pull is preferred so that changes pushed to GitHub by a collaborator don't conflict with local changes you may be making, or surprise you. You may also want to operate locally with a particular version, and not necessarilly the latest and greatest on the remote.
