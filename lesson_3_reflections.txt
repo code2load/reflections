@@ -18,12 +18,20 @@ copy of the entire repository, you want to give credit to the author you copied 
 
 4. What is the benefit of having a copy of the last known state of the remote stored locally?
 
-This allows git to compare current state of remote to determine if there are commits on the remote not yet reflected on the local, in which case, a merge is required.
+This allows git to compare current state of remote to determine if there are commits on the remote not yet reflected on the local.
 
 ---
 
 5. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
-Without Git, GitHub, or other version control tool, collaboration would be harder, especially when more than one collaborator is making changes to the same file at the same time. One primitive way to collaborate otherwise, would be to establish a policy where only one developer can update files at a time, and where files are flagged by a developer when they are working on it, so that other developers don't attempt to make
-changes at the same time. This manual "semaphore" approach could be enforced by verbal or written agreement, or by setting permissions on a file. Files could be stored on a server accessible to all, or changed files emailed or ftp'd to a moderator whose responsibility it is to update the code base with the submitted changes. In some cases, this approach could be easier if there is a small number of developers working on disjoint features for a simple project, who are not up to speed on Git and GitHub.
+Without Git, GitHub, or other version control tool, collaboration would be harder, especially when more than one collaborator is making changes to the same file at the same time. One primitive way to collaborate otherwise, would be to establish a policy where only one developer can update files at a time, and where files are flagged by a developer when they are working on them, so that other developers don't attempt to make changes at the same time. This manual "semaphore" approach could be enforced by verbal or written agreement, or by setting permissions on a file. Files could be stored on the cloud accessible to all, or changed files emailed or ftp'd to a moderator whose responsibility it is to update the code base with the submitted changes. It would be possible to allow more than one developer to modify a file at a time, but would require: a convention to avoid overwrite, a means to compare files for changes, resolve conflicts, and merge changes. In some cases, the non-git approach could be easier for those not familiar with git/GitHub, when there is a small number of developers working on mostly disjoint files for a simple project. 
+
+---
+
+6. When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+It is much simpler and takes fewer steps to make changes directly in master. However,
+making changes in a separate branch can be useful for collaboration, and used in conjunction with a GitHub pull request to allow another collaborator to review the proposed changes prior to accepting and merging the branch. Even without collaboration, a separate branch can come in handy, for making experimental changes, or making a specialized version of a project. 
+
+EOF
 
